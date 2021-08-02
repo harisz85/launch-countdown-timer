@@ -29,6 +29,7 @@ body {
     align-items: center;
     min-height: 80vh;
     justify-content: center;
+
 }
 
 
@@ -41,6 +42,11 @@ h1 {
     letter-spacing: 10px;
     font-size: 1.5rem;
 
+    @media screen and (max-width:480px) {
+        font-size: 1rem;
+        margin: 4rem auto 3rem;
+    }
+
 }
 
 .clock  {
@@ -49,14 +55,23 @@ h1 {
     display: flex;
 
 
+    @media screen and (max-width:480px) {
+
+        display: initial;
+    }
+
+
     div {
         padding: 1rem;
         margin: 1rem;
         text-align: center;
         height: 10rem;
-        
-        
 
+
+        @media screen and (max-width:480px) {
+
+                margin-top: 2rem;
+            }
     p {
 
         
@@ -165,6 +180,10 @@ h1 {
         text-transform: uppercase;
         letter-spacing: 8px;
         font-size: 1rem;
+
+        @media screen and (max-width:480px) {
+            margin-top: 1rem;
+        }
     }
     
 
@@ -180,6 +199,10 @@ h1 {
         z-index: 100;
         left: 50%;
         transform: translateX(-50%);
+
+        @media screen and (max-width: 480px) {
+            bottom: -10rem;
+        }
 
 
         ul {
@@ -230,6 +253,11 @@ h1 {
     bottom: 0;
     left: 0;
 
+    @media screen and (max-width:480px) {
+        position: relative;
+        display: inline-block;
+        top: 10rem;
+    }
 
     @media screen and (min-width:1440px) {
         
@@ -249,6 +277,10 @@ h1 {
     left: 28%;
     top: 16%;
     z-index: 100;
+
+    @media screen and (max-width:480px) {
+        left: 27%;
+    }
 }
 
 

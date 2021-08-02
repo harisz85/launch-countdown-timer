@@ -42,14 +42,24 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 1.5rem; }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1rem;
+      margin: 4rem auto 3rem; } }
 
 .clock {
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .clock {
+      display: initial; } }
   .clock div {
     padding: 1rem;
     margin: 1rem;
     text-align: center;
     height: 10rem; }
+    @media screen and (max-width: 480px) {
+      .clock div {
+        margin-top: 2rem; } }
     .clock div p {
       color: var(--soft-red);
       font-size: 4rem;
@@ -115,6 +125,9 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 8px;
     font-size: 1rem; }
+    @media screen and (max-width: 480px) {
+      .clock h3 {
+        margin-top: 1rem; } }
 
 .social {
   position: absolute;
@@ -122,6 +135,9 @@ h1 {
   z-index: 100;
   left: 50%;
   transform: translateX(-50%); }
+  @media screen and (max-width: 480px) {
+    .social {
+      bottom: -10rem; } }
   .social ul {
     display: flex;
     list-style-type: none; }
@@ -145,6 +161,11 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 0; }
+  @media screen and (max-width: 480px) {
+    .hills img {
+      position: relative;
+      display: inline-block;
+      top: 10rem; } }
   @media screen and (min-width: 1440px) {
     .hills img {
       width: 100%; } }
@@ -157,3 +178,9 @@ h1 {
   left: 28%;
   top: 16%;
   z-index: 100; }
+  @media screen and (max-width: 480px) {
+    #days,
+    #hours,
+    #minutes,
+    #seconds {
+      left: 27%; } }
